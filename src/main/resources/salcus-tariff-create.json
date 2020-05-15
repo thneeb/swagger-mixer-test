@@ -1,9 +1,6 @@
 {
-  "SalcusTariff": {
+  "SalcusTariffCreate": {
     "type": "object",
-    "allOf": [{
-      "$ref": "#/components/schemas/ProductOffering"
-    }],
     "properties" : {
       "salcusTariffId" : {
         "type":"String"

@@ -1,15 +1,18 @@
 package de.neebs;
 
-import io.swagger.client.api.CatalogApi;
+import io.swagger.client.api.ProductSpecificationApi;
+import io.swagger.client.model.SalcusTariffCreate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ProductCatalogFacade {
     @Autowired
-    private CatalogApi catalogApi;
+    private ProductSpecificationApi productSpecificationApi;
 
     public void testCall() {
-        catalogApi.createCatalog(null);
+        SalcusTariffCreate salcusTariff = new SalcusTariffCreate();
+        salcusTariff.setSalcusTariffId("Hello");
+        productSpecificationApi.createProductSpecification(salcusTariff);
     }
 }

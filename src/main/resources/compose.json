@@ -2,9 +2,9 @@
   "basefile": "product-catalog-openapi.json",
   "enhancements" : [
     {
-      "entity": "ProductSpecification",
+      "entity": "ProductSpecification_Create",
       "attribute": "@type",
-      "schemaLocation": "salcus-tariff.json"
+      "schemaLocation": "salcus-tariff-create.json"
     }
   ]
 }
